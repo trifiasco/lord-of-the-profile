@@ -2,8 +2,10 @@
   "name": "lord-of-the-profile",
   "version": "1.0.0",
   "description": "one package to rule all the profile",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "start": "nodemon --exec bable-node src/index.js",
+    "prepublish": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arnab Roy",
